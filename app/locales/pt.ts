@@ -1,10 +1,10 @@
 import { SubmitKey } from "../store/config";
-import { LocaleType } from "../locales/index";
+import { PartialLocaleType } from "../locales/index";
 import { getClientConfig } from "../config/client";
 
 const isApp = !!getClientConfig()?.isApp;
 
-const pt: LocaleType = {
+const pt: PartialLocaleType = {
   WIP: "Em breve...",
   Error: {
     Unauthorized: isApp
@@ -314,6 +314,23 @@ const pt: LocaleType = {
         ApiVerion: {
           Title: "Versão API Azure",
           SubTitle: "Verifique sua versão API do console Azure",
+        },
+      },
+      Anthropic: {
+        ApiKey: {
+          Title: "Chave API Anthropic",
+          SubTitle: "Verifique sua chave API do console Anthropic",
+          Placeholder: "Chave API Anthropic",
+        },
+
+        Endpoint: {
+          Title: "Endpoint Address",
+          SubTitle: "Exemplo: ",
+        },
+
+        ApiVerion: {
+          Title: "Versão API (Versão api claude)",
+          SubTitle: "Verifique sua versão API do console Anthropic",
         },
       },
       CustomModel: {
